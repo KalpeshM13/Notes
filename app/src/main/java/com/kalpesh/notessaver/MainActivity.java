@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
 
         recyclerView = findViewById(R.id.recycler_home);
         fab_add = findViewById(R.id.fab_add);
-        searchView_home = findViewById(R.id.searchview_home);
+        searchView_home = findViewById(R.id.searchView_home);
 
         database = RoomDB.getInstance(this);
         notes = database.mainDAO().getAll();

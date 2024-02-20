@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.SearchView
-        android:id="@+id/searchview_home"
+        android:id="@+id/searchView_home"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_alignParentTop="true"
@@ -26,44 +26,45 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_home"
-        android:layout_width="377dp"
-        android:layout_height="608dp"
-        android:layout_below="@+id/searchview_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchView_home"
         android:layout_margin="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchview_home" />
+        app:layout_constraintTop_toBottomOf="@+id/searchView_home"
+        app:layout_constraintVertical_bias="0.0" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
         android:background="@drawable/floating"
         android:padding="4dp"
+        android:layout_margin="8dp"
         android:src="@drawable/ic_add_note"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintHorizontal_bias="1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchview_home"
-        app:layout_constraintVertical_bias="0.832" />
+        app:layout_constraintTop_toBottomOf="@+id/searchView_home"
+        app:layout_constraintVertical_bias="0.95" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:text="Created by Kalpesh"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="14sp"
         android:textStyle="italic"
+        android:layout_margin="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recycler_home" />
+        app:layout_constraintTop_toBottomOf="@+id/recycler_home"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
